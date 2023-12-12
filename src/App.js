@@ -1,13 +1,13 @@
 import './App.css';
-import free
+import jhonbaironfigueroalogo from './imagenes/jhonbaironfigueroalogo.png';
 
 
 function App() {
   return (
-    <div className="App">
-      <div className="jhonbairon-logo-contenedor">
+    <div className='App'>
+      <div className='jhonbairon-logo-contenedor'>
         <img className='jhonbairon-logo' 
-          src={}
+          src={jhonbaironfigueroalogo}
           alt='Logo de Jhon Bairon' />
       </div>
     </div>
