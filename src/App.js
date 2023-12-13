@@ -2,16 +2,18 @@ import './App.css';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
 import jhonbaironfigueroalogo from './imagenes/jhonbaironfigueroalogo.png';
-
+import { useState } from 'react';
 
 function App() {
 
+  const [numClics, setNumClics] = useState(0);
+
   const manejarClic = () => {
-    console.log('Clic');
+    setNumClics(numClics + 1);
   }
 
   const reiniciarContador = () => {
-    console.log('Reiniciar');
+    setNumClics(0);
   }
 
   return (
@@ -22,7 +24,7 @@ function App() {
           alt='Logo de Jhon Bairon' />
       </div>
       <div className='contenedor-principal'>
-        <Contador numClics='5'  />
+        <Contador numClics={numClics}  />
         <Boton 
           texto='Clic'
           esBotonDeClic={true}
