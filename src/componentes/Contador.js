@@ -1,9 +1,12 @@
-import React from 'react';
-import '../hojas-de-estilo/Contador.css';
+import React from 'react'; // Importa React
+import '../hojas-de-estilo/Contador.css'; // Importa los estilos del contador
 
-function Contador({ numClics }) {
+// Define el componente Contador
+function Contador({ numClics }) { 
+    
+    // Renderiza un div que muestra el número de clics
     return (
-        <div className='contador'>
+        <div className='contador'> 
             {numClics}
         </div>
     );

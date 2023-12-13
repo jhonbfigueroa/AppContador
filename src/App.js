@@ -1,21 +1,26 @@
-import './App.css';
-import Boton from './componentes/Boton';
-import Contador from './componentes/Contador';
-import jhonbaironfigueroalogo from './imagenes/jhonbaironfigueroalogo.png';
-import { useState } from 'react';
+import './App.css'; // Importa los estilos de la aplicación
+import Boton from './componentes/Boton'; // Importa el componente Boton
+import Contador from './componentes/Contador'; // Importa el componente Contador
+import jhonbaironfigueroalogo from './imagenes/jhonbaironfigueroalogo.png'; // Importa una imagen
+import { useState } from 'react'; // Importa el hook useState de React
 
+// Define el componente App
 function App() {
 
+  // Define el estado numClics y su función de actualización setNumClics, inicializado en 0  const [numClics, setNumClics] = useState(0);
   const [numClics, setNumClics] = useState(0);
 
+  // Define una función para manejar los clics, que incrementa numClics en 1
   const manejarClic = () => {
     setNumClics(numClics + 1);
-  }
+  };
 
+  // Define una función para reiniciar el contador, que establece numClics en 0
   const reiniciarContador = () => {
     setNumClics(0);
-  }
+  };
 
+  // Renderiza la aplicación
   return (
     <div className='App'>
       <div className='jhonbairon-logo-contenedor'>
